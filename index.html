@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="toggle-theme">🌙 Dark Mode</button>
+        <div class="quiz-container">
+            <h1>Quiz App</h1>
+            <div id="category-selection">
+                <label for="category">Choose Category:</label>
+                <select id="category">
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="history">History</option>
+                </select>
+                <button id="start-btn" class="btn">Start Quiz</button>
+            </div>
+            <div id="quiz" class="hidden">
+                <div id="question-container"></div>
+                <div id="options"></div>
+                <div class="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <p id="timer">Time Left: <span id="time">30</span> sec</p>
+            </div>
+            <div id="result" class="hidden">
+                <h2>Quiz Completed!</h2>
+                <p id="score"></p>
+                <button id="restart-btn" class="btn">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
